@@ -134,7 +134,15 @@ view: sf_case_history {
     drill_fields: [account_name]
   }
 
-
+  measure: total_cases_by_source {
+    type: count_distinct
+    filters: {
+      field: origin
+      value: "Source-type"
+    }
+    sql: ${account_number} ;;
+    drill_fields: [sf_case_history.account_number,account_name,origin,created_date,case_number,credit_amount_include_vat]
+  }
 
 
 }

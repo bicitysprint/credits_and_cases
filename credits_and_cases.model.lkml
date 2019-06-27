@@ -18,4 +18,12 @@ explore: crednote {
 explore: sf_case_history {
     persist_with: credits_and_cases_default_datagroup
     label: "Cases"
-  }
+
+
+join: aged_debt_view {
+  view_label: "Customer Details"
+  relationship:  one_to_one
+  sql_on: ${aged_debt_view.cust_key} = ${sf_case_history.account_number} ;;
+}
+
+}

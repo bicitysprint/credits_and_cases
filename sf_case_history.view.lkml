@@ -134,6 +134,11 @@ view: sf_case_history {
     drill_fields: [account_name]
   }
 
+  measure: count_by_type {
+    type: count_distinct
+    drill_fields: [origin]
+  }
+
  ## measure: total_cases_by_source {
  ##   type: count_distinct
  ##   filters: {

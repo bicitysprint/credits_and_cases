@@ -136,7 +136,7 @@ view: sf_case_history {
 
   measure:  sum {
     type: sum_distinct
-    drill_fields: [origin]
+    drill_fields: [origin, count]
   }
 
 

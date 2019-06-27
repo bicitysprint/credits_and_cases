@@ -10,7 +10,7 @@ datagroup: credits_and_cases_default_datagroup {
 
 persist_with: credits_and_cases_default_datagroup
 
-explore: crednote {
+explore: sf_case_history {
 }
 
 

@@ -134,10 +134,7 @@ view: sf_case_history {
     drill_fields: [account_name]
   }
 
-  measure:  sum {
-    type: sum_distinct
-    drill_fields: [origin, count]
-  }
+
 
 
 }

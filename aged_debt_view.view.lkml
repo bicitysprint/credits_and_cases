@@ -2,6 +2,7 @@ view: aged_debt_view {
   sql_table_name: CC.AGED_DEBT_VIEW ;;
 
   dimension: account_sc {
+    label: "Account Service Centre"
     type: string
     sql: ${TABLE}."ACCOUNT_SC" ;;
   }
@@ -23,6 +24,7 @@ view: aged_debt_view {
   }
 
   dimension: cust_key {
+    label: "Customer Key"
     type: string
     sql: ${TABLE}."CUST_KEY" ;;
   }
@@ -39,11 +41,13 @@ view: aged_debt_view {
   }
 
   dimension: g_desc {
+    label: "Account Manager"
     type: string
     sql: ${TABLE}."G_DESC" ;;
   }
 
   dimension: h_desc {
+    label: "Credit Controller"
     type: string
     sql: ${TABLE}."H_DESC" ;;
   }

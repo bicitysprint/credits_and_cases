@@ -12,6 +12,7 @@ view: sf_case_history {
   }
 
   dimension: account_number {
+    primary_key: yes
     type: string
     sql: ${TABLE}."ACCOUNT_NUMBER" ;;
   }
@@ -132,4 +133,11 @@ view: sf_case_history {
     type: count
     drill_fields: [account_name]
   }
+
+  measure:  sum {
+    type: sum_distinct
+    drill_fields: [origin]
+  }
+
+
 }

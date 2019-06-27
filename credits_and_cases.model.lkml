@@ -15,7 +15,7 @@ explore: sf_case_history {
     join: crednote {
       view_label: "Credit Notes"
       relationship: one_to_one
-      sql_on: ${crednote.customer_key} = ${sf_case_history.account_number} ;;
+      sql_on: ${crednote.customer_key} = ${sf_case_history.account_number} AND ${crednote.transaction_code} = ${sf_case_history.credit_reason_note_code} ;;
     }
 
 }

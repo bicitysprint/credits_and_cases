@@ -62,7 +62,7 @@ view: crednote {
   }
 
   dimension: archive {
-    type: number
+    type: string
     sql: ${TABLE}."ARCHIVE" ;;
   }
 

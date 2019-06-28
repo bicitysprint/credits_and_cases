@@ -92,7 +92,7 @@ view: crednote {
   }
 
   dimension: cnote_key {
-    type: number
+    type: string
     sql: ${TABLE}."CNOTE_KEY" ;;
   }
 

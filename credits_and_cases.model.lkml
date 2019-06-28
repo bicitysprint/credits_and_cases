@@ -16,6 +16,7 @@ explore: sf_case_history {
     label: "Cases"
 
 
+
 join: aged_debt_view {
   view_label: "Customer Details"
   relationship:  one_to_one
